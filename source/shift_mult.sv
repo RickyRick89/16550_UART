@@ -16,4 +16,40 @@ module shift_mult #(
   output logic     busy
 );
 
+  typedef struct packed {
+    product_word_t acc;
+    product_word_t multiplicand; //This is product word type so we don't lose needed data when shifting.
+    multiplier_word_t multiplier;
+    logic  operating;
+  } state_t;
+
+  state_t current, next;
+
+  always_ff @(posedge clk)
+    current <= next;
+
+  always_comb begin
+    next = current;
+
+    if (start) begin
+      next.acc         = '0;
+      next.multiplicand = multiplicand;
+      next.multiplier   = multiplier;
+	  if (multiplier > 0) next.operating = 1;
+    end
+    else if (next.operating) begin
+      if (next.multiplier[0]) next.acc += next.multiplicand;
+
+      next.multiplicand <<= 1;
+      next.multiplier   >>= 1;
+
+      if (next.multiplier == 0) next.operating = 0;
+    end
+	
+    if (!rst_n) next = '0;
+  end
+
+  assign product = current.acc;
+  assign busy    = current.operating;
+
 endmodule

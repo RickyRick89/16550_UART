@@ -1,0 +1,11 @@
+# Build Artifacts:
+build
+*.yml
+*.txt
+*.out
+
+# Vivado Artifacts:
+*.jou
+*.log
+*.str
+

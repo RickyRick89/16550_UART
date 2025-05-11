@@ -44,13 +44,15 @@ SYNTH_SOURCES ?= \
 # Synthesis and Simulation:
 
 SOURCES ?= \
-	$(SOURCE_DIR)/shift_mult.sv
+	$(SOURCE_DIR)/shift_mult.sv \
+	$(SOURCE_DIR)/baud_gen.sv
 
 # --------------------------------------------------------------
 # Simulation Only:
 
 TEST_SOURCES ?= \
-	$(TEST_DIR)/shift_mult_tb.sv
+	$(TEST_DIR)/shift_mult_tb.sv\
+	$(TEST_DIR)/baud_gen_tb.sv
 
 # --------------------------------------------------------------
 # Block Designs:
@@ -62,7 +64,8 @@ BLOCK_DESIGNS ?= \
 # Waveforms:
 
 WAVES ?= \
-	$(SCRIPTS_DIR)/shift_mult_tb_waves.wcfg
+	$(SCRIPTS_DIR)/shift_mult_tb_waves.wcfg \
+	$(SCRIPTS_DIR)/baud_gen_tb_waves.wcfg
 
 # ##############################################################
 # Board Selection:

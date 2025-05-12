@@ -47,7 +47,8 @@ SOURCES ?= \
 	$(SOURCE_DIR)/shift_mult.sv \
 	$(SOURCE_DIR)/baud_gen.sv \
 	$(SOURCE_DIR)/uart_tx.sv \
-	$(SOURCE_DIR)/uart_rx.sv
+	$(SOURCE_DIR)/uart_rx.sv \
+	$(SOURCE_DIR)/fifo_lite.sv
 
 # --------------------------------------------------------------
 # Simulation Only:
@@ -57,7 +58,8 @@ TEST_SOURCES ?= \
 	$(TEST_DIR)/baud_gen_tb.sv \
 	$(TEST_DIR)/uart_tx_tb.sv \
 	$(TEST_DIR)/uart_rx_tb.sv \
-	$(TEST_DIR)/uart_loopback_tb.sv
+	$(TEST_DIR)/uart_loopback_tb.sv \
+	$(TEST_DIR)/fifo_lite_tb.sv
 
 # --------------------------------------------------------------
 # Block Designs:
@@ -73,7 +75,8 @@ WAVES ?= \
 	$(SCRIPTS_DIR)/baud_gen_tb_waves.wcfg \
 	$(SCRIPTS_DIR)/uart_tx_tb_waves.wcfg \
 	$(SCRIPTS_DIR)/uart_rx_tb_waves.wcfg \
-	$(SCRIPTS_DIR)/uart_loopback_tb_waves.wcfg
+	$(SCRIPTS_DIR)/uart_loopback_tb_waves.wcfg \
+	$(SCRIPTS_DIR)/fifo_lite_tb_waves.wcfg
 
 # ##############################################################
 # Board Selection:

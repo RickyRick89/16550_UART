@@ -9,6 +9,9 @@ module baud_gen #(
 	input  DL_word_t    divisor_latch,     // DLM:DLL combined
 	input  PSD_word_t   psd,               // Prescaler division (0–15) = divide by (PSD+1)
 	input  logic        new_baud,          // Signal that a new baud rate should be calculated
+	input  logic        enable_sample,     // Gate sample_tick generation
+	input  logic        enable_baud,       // Gate baud_tick generation
+
 	output logic        baud_tick,         // Pulse at baud rate
 	output logic        sample_tick,       // Pulse at 16× baud rate
 	output logic        active             // Signal that the baud generator is active
@@ -109,21 +112,31 @@ module baud_gen #(
 			baud_tick      <= 0;
 		end else begin
 			// Sample tick
-			if (sample_counter == 0) begin
-				sample_tick    <= 1;
+			if (enable_sample) begin
+				if (sample_counter == 0) begin
+					sample_tick    <= 1;
+					sample_counter <= sample_divisor;
+				end else begin
+					sample_tick    <= 0;
+					sample_counter <= sample_counter - 1;
+				end
+			end
+			else begin
 				sample_counter <= sample_divisor;
-			end else begin
-				sample_tick    <= 0;
-				sample_counter <= sample_counter - 1;
 			end
 
 			// Baud tick
-			if (baud_counter == 0) begin
-				baud_tick    <= 1;
+			if (enable_baud) begin
+				if (baud_counter == 0) begin
+					baud_tick    <= 1;
+					baud_counter <= baud_divisor;
+				end else begin
+					baud_tick    <= 0;
+					baud_counter <= baud_counter - 1;
+				end
+			end
+			else begin
 				baud_counter <= baud_divisor;
-			end else begin
-				baud_tick    <= 0;
-				baud_counter <= baud_counter - 1;
 			end
 		end
 	end

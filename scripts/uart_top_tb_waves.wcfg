@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="uart_top_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="uart_top_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
+      <ZoomEndTime time="1,590.644 ns"></ZoomEndTime>
+      <Cursor1Time time="105.000 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="429"></NameColumnWidth>
+      <ValueColumnWidth column_width="58"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="2" />
+   <wvobject fp_name="group1597" type="group">
+      <obj_property name="label">uart_top_tb</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/uart_top_tb/BAUD_RATE" type="array">
+         <obj_property name="ElementShortName">BAUD_RATE[31:0]</obj_property>
+         <obj_property name="ObjectShortName">BAUD_RATE[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/uart_top_tb/CLK_FREQ" type="array">
+         <obj_property name="ElementShortName">CLK_FREQ[31:0]</obj_property>
+         <obj_property name="ObjectShortName">CLK_FREQ[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/uart_top_tb/CLK_PERIOD" type="array">
+         <obj_property name="ElementShortName">CLK_PERIOD[31:0]</obj_property>
+         <obj_property name="ObjectShortName">CLK_PERIOD[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/uart_top_tb/DL_WIDTH" type="array">
+         <obj_property name="ElementShortName">DL_WIDTH[31:0]</obj_property>
+         <obj_property name="ObjectShortName">DL_WIDTH[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/uart_top_tb/PSD_WIDTH" type="array">
+         <obj_property name="ElementShortName">PSD_WIDTH[31:0]</obj_property>
+         <obj_property name="ObjectShortName">PSD_WIDTH[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/uart_top_tb/clk" type="logic">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/uart_top_tb/data_bits" type="array">
+         <obj_property name="ElementShortName">data_bits[3:0]</obj_property>
+         <obj_property name="ObjectShortName">data_bits[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/uart_top_tb/divisor_latch" type="array">
+         <obj_property name="ElementShortName">divisor_latch[15:0]</obj_property>
+         <obj_property name="ObjectShortName">divisor_latch[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/uart_top_tb/framing_err" type="logic">
+         <obj_property name="ElementShortName">framing_err</obj_property>
+         <obj_property name="ObjectShortName">framing_err</obj_property>
+      </wvobject>
+      <wvobject fp_name="/uart_top_tb/new_baud" type="logic">
+         <obj_property name="ElementShortName">new_baud</obj_property>
+         <obj_property name="ObjectShortName">new_baud</obj_property>
+      </wvobject>
+      <wvobject fp_name="/uart_top_tb/overrun_err" type="logic">
+         <obj_property name="ElementShortName">overrun_err</obj_property>
+         <obj_property name="ObjectShortName">overrun_err</obj_property>
+      </wvobject>
+      <wvobject fp_name="/uart_top_tb/parity_en" type="logic">
+         <obj_property name="ElementShortName">parity_en</obj_property>
+         <obj_property name="ObjectShortName">parity_en</obj_property>
+      </wvobject>
+      <wvobject fp_name="/uart_top_tb/parity_err" type="logic">
+         <obj_property name="ElementShortName">parity_err</obj_property>
+         <obj_property name="ObjectShortName">parity_err</obj_property>
+      </wvobject>
+      <wvobject fp_name="/uart_top_tb/parity_even" type="logic">
+         <obj_property name="ElementShortName">parity_even</obj_property>
+         <obj_property name="ObjectShortName">parity_even</obj_property>
+      </wvobject>
+      <wvobject fp_name="/uart_top_tb/psd" type="array">
+         <obj_property name="ElementShortName">psd[3:0]</obj_property>
+         <obj_property name="ObjectShortName">psd[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/uart_top_tb/rd_data" type="array">
+         <obj_property name="ElementShortName">rd_data[7:0]</obj_property>
+         <obj_property name="ObjectShortName">rd_data[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/uart_top_tb/rd_en" type="logic">
+         <obj_property name="ElementShortName">rd_en</obj_property>
+         <obj_property name="ObjectShortName">rd_en</obj_property>
+      </wvobject>
+      <wvobject fp_name="/uart_top_tb/rst" type="logic">
+         <obj_property name="ElementShortName">rst</obj_property>
+         <obj_property name="ObjectShortName">rst</obj_property>
+      </wvobject>
+      <wvobject fp_name="/uart_top_tb/rx_count" type="array">
+         <obj_property name="ElementShortName">rx_count[31:0]</obj_property>
+         <obj_property name="ObjectShortName">rx_count[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/uart_top_tb/rx_ready" type="logic">
+         <obj_property name="ElementShortName">rx_ready</obj_property>
+         <obj_property name="ObjectShortName">rx_ready</obj_property>
+      </wvobject>
+      <wvobject fp_name="/uart_top_tb/rxd" type="logic">
+         <obj_property name="ElementShortName">rxd</obj_property>
+         <obj_property name="ObjectShortName">rxd</obj_property>
+      </wvobject>
+      <wvobject fp_name="/uart_top_tb/stop_bits" type="array">
+         <obj_property name="ElementShortName">stop_bits[1:0]</obj_property>
+         <obj_property name="ObjectShortName">stop_bits[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/uart_top_tb/tx_data" type="array">
+         <obj_property name="ElementShortName">tx_data[0:1][7:0]</obj_property>
+         <obj_property name="ObjectShortName">tx_data[0:1][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/uart_top_tb/tx_ptr" type="array">
+         <obj_property name="ElementShortName">tx_ptr[31:0]</obj_property>
+         <obj_property name="ObjectShortName">tx_ptr[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/uart_top_tb/tx_ready" type="logic">
+         <obj_property name="ElementShortName">tx_ready</obj_property>
+         <obj_property name="ObjectShortName">tx_ready</obj_property>
+      </wvobject>
+      <wvobject fp_name="/uart_top_tb/txd" type="logic">
+         <obj_property name="ElementShortName">txd</obj_property>
+         <obj_property name="ObjectShortName">txd</obj_property>
+      </wvobject>
+      <wvobject fp_name="/uart_top_tb/wr_data" type="array">
+         <obj_property name="ElementShortName">wr_data[7:0]</obj_property>
+         <obj_property name="ObjectShortName">wr_data[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/uart_top_tb/wr_en" type="logic">
+         <obj_property name="ElementShortName">wr_en</obj_property>
+         <obj_property name="ObjectShortName">wr_en</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group1596" type="group">
+      <obj_property name="label">uart_top</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/uart_top_tb/dut/DL_WIDTH" type="array">
+         <obj_property name="ElementShortName">DL_WIDTH[31:0]</obj_property>
+         <obj_property name="ObjectShortName">DL_WIDTH[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/uart_top_tb/dut/FIFO_DEPTH" type="array">
+         <obj_property name="ElementShortName">FIFO_DEPTH[31:0]</obj_property>
+         <obj_property name="ObjectShortName">FIFO_DEPTH[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/uart_top_tb/dut/PSD_WIDTH" type="array">
+         <obj_property name="ElementShortName">PSD_WIDTH[31:0]</obj_property>
+         <obj_property name="ObjectShortName">PSD_WIDTH[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/uart_top_tb/dut/baud_tick" type="logic">
+         <obj_property name="ElementShortName">baud_tick</obj_property>
+         <obj_property name="ObjectShortName">baud_tick</obj_property>
+      </wvobject>
+      <wvobject fp_name="/uart_top_tb/dut/clk" type="logic">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/uart_top_tb/dut/data_bits" type="array">
+         <obj_property name="ElementShortName">data_bits[3:0]</obj_property>
+         <obj_property name="ObjectShortName">data_bits[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/uart_top_tb/dut/divisor_latch" type="array">
+         <obj_property name="ElementShortName">divisor_latch[15:0]</obj_property>
+         <obj_property name="ObjectShortName">divisor_latch[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/uart_top_tb/dut/enable_baud" type="logic">
+         <obj_property name="ElementShortName">enable_baud</obj_property>
+         <obj_property name="ObjectShortName">enable_baud</obj_property>
+      </wvobject>
+      <wvobject fp_name="/uart_top_tb/dut/enable_sample" type="logic">
+         <obj_property name="ElementShortName">enable_sample</obj_property>
+         <obj_property name="ObjectShortName">enable_sample</obj_property>
+      </wvobject>
+      <wvobject fp_name="/uart_top_tb/dut/framing_err" type="logic">
+         <obj_property name="ElementShortName">framing_err</obj_property>
+         <obj_property name="ObjectShortName">framing_err</obj_property>
+      </wvobject>
+      <wvobject fp_name="/uart_top_tb/dut/new_baud" type="logic">
+         <obj_property name="ElementShortName">new_baud</obj_property>
+         <obj_property name="ObjectShortName">new_baud</obj_property>
+      </wvobject>
+      <wvobject fp_name="/uart_top_tb/dut/overrun_err" type="logic">
+         <obj_property name="ElementShortName">overrun_err</obj_property>
+         <obj_property name="ObjectShortName">overrun_err</obj_property>
+      </wvobject>
+      <wvobject fp_name="/uart_top_tb/dut/parity_en" type="logic">
+         <obj_property name="ElementShortName">parity_en</obj_property>
+         <obj_property name="ObjectShortName">parity_en</obj_property>
+      </wvobject>
+      <wvobject fp_name="/uart_top_tb/dut/parity_err" type="logic">
+         <obj_property name="ElementShortName">parity_err</obj_property>
+         <obj_property name="ObjectShortName">parity_err</obj_property>
+      </wvobject>
+      <wvobject fp_name="/uart_top_tb/dut/parity_even" type="logic">
+         <obj_property name="ElementShortName">parity_even</obj_property>
+         <obj_property name="ObjectShortName">parity_even</obj_property>
+      </wvobject>
+      <wvobject fp_name="/uart_top_tb/dut/psd" type="array">
+         <obj_property name="ElementShortName">psd[3:0]</obj_property>
+         <obj_property name="ObjectShortName">psd[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/uart_top_tb/dut/rd_data" type="array">
+         <obj_property name="ElementShortName">rd_data[7:0]</obj_property>
+         <obj_property name="ObjectShortName">rd_data[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/uart_top_tb/dut/rd_en" type="logic">
+         <obj_property name="ElementShortName">rd_en</obj_property>
+         <obj_property name="ObjectShortName">rd_en</obj_property>
+      </wvobject>
+      <wvobject fp_name="/uart_top_tb/dut/rst" type="logic">
+         <obj_property name="ElementShortName">rst</obj_property>
+         <obj_property name="ObjectShortName">rst</obj_property>
+      </wvobject>
+      <wvobject fp_name="/uart_top_tb/dut/rx_data_out" type="array">
+         <obj_property name="ElementShortName">rx_data_out[7:0]</obj_property>
+         <obj_property name="ObjectShortName">rx_data_out[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/uart_top_tb/dut/rx_data_ready" type="logic">
+         <obj_property name="ElementShortName">rx_data_ready</obj_property>
+         <obj_property name="ObjectShortName">rx_data_ready</obj_property>
+      </wvobject>
+      <wvobject fp_name="/uart_top_tb/dut/rx_fifo_empty" type="logic">
+         <obj_property name="ElementShortName">rx_fifo_empty</obj_property>
+         <obj_property name="ObjectShortName">rx_fifo_empty</obj_property>
+      </wvobject>
+      <wvobject fp_name="/uart_top_tb/dut/rx_fifo_full" type="logic">
+         <obj_property name="ElementShortName">rx_fifo_full</obj_property>
+         <obj_property name="ObjectShortName">rx_fifo_full</obj_property>
+      </wvobject>
+      <wvobject fp_name="/uart_top_tb/dut/rx_fifo_rd_data" type="array">
+         <obj_property name="ElementShortName">rx_fifo_rd_data[7:0]</obj_property>
+         <obj_property name="ObjectShortName">rx_fifo_rd_data[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/uart_top_tb/dut/rx_fifo_wr_en" type="logic">
+         <obj_property name="ElementShortName">rx_fifo_wr_en</obj_property>
+         <obj_property name="ObjectShortName">rx_fifo_wr_en</obj_property>
+      </wvobject>
+      <wvobject fp_name="/uart_top_tb/dut/rx_framing_err" type="logic">
+         <obj_property name="ElementShortName">rx_framing_err</obj_property>
+         <obj_property name="ObjectShortName">rx_framing_err</obj_property>
+      </wvobject>
+      <wvobject fp_name="/uart_top_tb/dut/rx_parity_err" type="logic">
+         <obj_property name="ElementShortName">rx_parity_err</obj_property>
+         <obj_property name="ObjectShortName">rx_parity_err</obj_property>
+      </wvobject>
+      <wvobject fp_name="/uart_top_tb/dut/rx_ready" type="logic">
+         <obj_property name="ElementShortName">rx_ready</obj_property>
+         <obj_property name="ObjectShortName">rx_ready</obj_property>
+      </wvobject>
+      <wvobject fp_name="/uart_top_tb/dut/rxd" type="logic">
+         <obj_property name="ElementShortName">rxd</obj_property>
+         <obj_property name="ObjectShortName">rxd</obj_property>
+      </wvobject>
+      <wvobject fp_name="/uart_top_tb/dut/sample_tick" type="logic">
+         <obj_property name="ElementShortName">sample_tick</obj_property>
+         <obj_property name="ObjectShortName">sample_tick</obj_property>
+      </wvobject>
+      <wvobject fp_name="/uart_top_tb/dut/stop_bits" type="array">
+         <obj_property name="ElementShortName">stop_bits[1:0]</obj_property>
+         <obj_property name="ObjectShortName">stop_bits[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/uart_top_tb/dut/tx_busy" type="logic">
+         <obj_property name="ElementShortName">tx_busy</obj_property>
+         <obj_property name="ObjectShortName">tx_busy</obj_property>
+      </wvobject>
+      <wvobject fp_name="/uart_top_tb/dut/tx_data" type="array">
+         <obj_property name="ElementShortName">tx_data[7:0]</obj_property>
+         <obj_property name="ObjectShortName">tx_data[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/uart_top_tb/dut/tx_fifo_empty" type="logic">
+         <obj_property name="ElementShortName">tx_fifo_empty</obj_property>
+         <obj_property name="ObjectShortName">tx_fifo_empty</obj_property>
+      </wvobject>
+      <wvobject fp_name="/uart_top_tb/dut/tx_fifo_full" type="logic">
+         <obj_property name="ElementShortName">tx_fifo_full</obj_property>
+         <obj_property name="ObjectShortName">tx_fifo_full</obj_property>
+      </wvobject>
+      <wvobject fp_name="/uart_top_tb/dut/tx_fifo_rd_data" type="array">
+         <obj_property name="ElementShortName">tx_fifo_rd_data[7:0]</obj_property>
+         <obj_property name="ObjectShortName">tx_fifo_rd_data[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/uart_top_tb/dut/tx_ready" type="logic">
+         <obj_property name="ElementShortName">tx_ready</obj_property>
+         <obj_property name="ObjectShortName">tx_ready</obj_property>
+      </wvobject>
+      <wvobject fp_name="/uart_top_tb/dut/tx_start" type="logic">
+         <obj_property name="ElementShortName">tx_start</obj_property>
+         <obj_property name="ObjectShortName">tx_start</obj_property>
+      </wvobject>
+      <wvobject fp_name="/uart_top_tb/dut/txd" type="logic">
+         <obj_property name="ElementShortName">txd</obj_property>
+         <obj_property name="ObjectShortName">txd</obj_property>
+      </wvobject>
+      <wvobject fp_name="/uart_top_tb/dut/wr_data" type="array">
+         <obj_property name="ElementShortName">wr_data[7:0]</obj_property>
+         <obj_property name="ObjectShortName">wr_data[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/uart_top_tb/dut/wr_en" type="logic">
+         <obj_property name="ElementShortName">wr_en</obj_property>
+         <obj_property name="ObjectShortName">wr_en</obj_property>
+      </wvobject>
+   </wvobject>
+</wave_config>

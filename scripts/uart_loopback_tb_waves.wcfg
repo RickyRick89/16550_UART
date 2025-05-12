@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="uart_loopback_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="uart_loopback_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
+      <ZoomEndTime time="1,600.001 ns"></ZoomEndTime>
+      <Cursor1Time time="1,000.000 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="445"></NameColumnWidth>
+      <ValueColumnWidth column_width="58"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="3" />
+   <wvobject fp_name="group848" type="group">
+      <obj_property name="label">uart_loopback_tb</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/uart_loopback_tb/BAUD_RATE" type="array">
+         <obj_property name="ElementShortName">BAUD_RATE[31:0]</obj_property>
+         <obj_property name="ObjectShortName">BAUD_RATE[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/uart_loopback_tb/BAUD_TICK_PERIOD" type="array">
+         <obj_property name="ElementShortName">BAUD_TICK_PERIOD[31:0]</obj_property>
+         <obj_property name="ObjectShortName">BAUD_TICK_PERIOD[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/uart_loopback_tb/CLK_FREQ" type="array">
+         <obj_property name="ElementShortName">CLK_FREQ[31:0]</obj_property>
+         <obj_property name="ObjectShortName">CLK_FREQ[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/uart_loopback_tb/CLK_PERIOD" type="array">
+         <obj_property name="ElementShortName">CLK_PERIOD[31:0]</obj_property>
+         <obj_property name="ObjectShortName">CLK_PERIOD[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/uart_loopback_tb/OVERSAMPLE" type="array">
+         <obj_property name="ElementShortName">OVERSAMPLE[31:0]</obj_property>
+         <obj_property name="ObjectShortName">OVERSAMPLE[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/uart_loopback_tb/SAMPLE_TICK_PERIOD" type="array">
+         <obj_property name="ElementShortName">SAMPLE_TICK_PERIOD[31:0]</obj_property>
+         <obj_property name="ObjectShortName">SAMPLE_TICK_PERIOD[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/uart_loopback_tb/clk" type="logic">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/uart_loopback_tb/data_bits" type="array">
+         <obj_property name="ElementShortName">data_bits[3:0]</obj_property>
+         <obj_property name="ObjectShortName">data_bits[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/uart_loopback_tb/data_ready" type="logic">
+         <obj_property name="ElementShortName">data_ready</obj_property>
+         <obj_property name="ObjectShortName">data_ready</obj_property>
+      </wvobject>
+      <wvobject fp_name="/uart_loopback_tb/enable_baud" type="logic">
+         <obj_property name="ElementShortName">enable_baud</obj_property>
+         <obj_property name="ObjectShortName">enable_baud</obj_property>
+      </wvobject>
+      <wvobject fp_name="/uart_loopback_tb/enable_sample" type="logic">
+         <obj_property name="ElementShortName">enable_sample</obj_property>
+         <obj_property name="ObjectShortName">enable_sample</obj_property>
+      </wvobject>
+      <wvobject fp_name="/uart_loopback_tb/framing_err" type="logic">
+         <obj_property name="ElementShortName">framing_err</obj_property>
+         <obj_property name="ObjectShortName">framing_err</obj_property>
+      </wvobject>
+      <wvobject fp_name="/uart_loopback_tb/parity_en" type="logic">
+         <obj_property name="ElementShortName">parity_en</obj_property>
+         <obj_property name="ObjectShortName">parity_en</obj_property>
+      </wvobject>
+      <wvobject fp_name="/uart_loopback_tb/parity_err" type="logic">
+         <obj_property name="ElementShortName">parity_err</obj_property>
+         <obj_property name="ObjectShortName">parity_err</obj_property>
+      </wvobject>
+      <wvobject fp_name="/uart_loopback_tb/parity_even" type="logic">
+         <obj_property name="ElementShortName">parity_even</obj_property>
+         <obj_property name="ObjectShortName">parity_even</obj_property>
+      </wvobject>
+      <wvobject fp_name="/uart_loopback_tb/rst" type="logic">
+         <obj_property name="ElementShortName">rst</obj_property>
+         <obj_property name="ObjectShortName">rst</obj_property>
+      </wvobject>
+      <wvobject fp_name="/uart_loopback_tb/rx_data" type="array">
+         <obj_property name="ElementShortName">rx_data[7:0]</obj_property>
+         <obj_property name="ObjectShortName">rx_data[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/uart_loopback_tb/rxd" type="logic">
+         <obj_property name="ElementShortName">rxd</obj_property>
+         <obj_property name="ObjectShortName">rxd</obj_property>
+      </wvobject>
+      <wvobject fp_name="/uart_loopback_tb/sample_cnt" type="array">
+         <obj_property name="ElementShortName">sample_cnt[31:0]</obj_property>
+         <obj_property name="ObjectShortName">sample_cnt[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/uart_loopback_tb/sample_tick" type="logic">
+         <obj_property name="ElementShortName">sample_tick</obj_property>
+         <obj_property name="ObjectShortName">sample_tick</obj_property>
+      </wvobject>
+      <wvobject fp_name="/uart_loopback_tb/stop_bits" type="array">
+         <obj_property name="ElementShortName">stop_bits[1:0]</obj_property>
+         <obj_property name="ObjectShortName">stop_bits[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/uart_loopback_tb/test_bytes" type="array">
+         <obj_property name="ElementShortName">test_bytes[0:1][7:0]</obj_property>
+         <obj_property name="ObjectShortName">test_bytes[0:1][7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/uart_loopback_tb/tick" type="logic">
+         <obj_property name="ElementShortName">tick</obj_property>
+         <obj_property name="ObjectShortName">tick</obj_property>
+      </wvobject>
+      <wvobject fp_name="/uart_loopback_tb/tick_cnt" type="array">
+         <obj_property name="ElementShortName">tick_cnt[31:0]</obj_property>
+         <obj_property name="ObjectShortName">tick_cnt[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/uart_loopback_tb/tx_busy" type="logic">
+         <obj_property name="ElementShortName">tx_busy</obj_property>
+         <obj_property name="ObjectShortName">tx_busy</obj_property>
+      </wvobject>
+      <wvobject fp_name="/uart_loopback_tb/tx_data" type="array">
+         <obj_property name="ElementShortName">tx_data[7:0]</obj_property>
+         <obj_property name="ObjectShortName">tx_data[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/uart_loopback_tb/tx_start" type="logic">
+         <obj_property name="ElementShortName">tx_start</obj_property>
+         <obj_property name="ObjectShortName">tx_start</obj_property>
+      </wvobject>
+      <wvobject fp_name="/uart_loopback_tb/txd" type="logic">
+         <obj_property name="ElementShortName">txd</obj_property>
+         <obj_property name="ObjectShortName">txd</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group849" type="group">
+      <obj_property name="label">uart_tx</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/uart_loopback_tb/tx/bit_cnt" type="array">
+         <obj_property name="ElementShortName">bit_cnt[3:0]</obj_property>
+         <obj_property name="ObjectShortName">bit_cnt[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/uart_loopback_tb/tx/clk" type="logic">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/uart_loopback_tb/tx/data_bits" type="array">
+         <obj_property name="ElementShortName">data_bits[3:0]</obj_property>
+         <obj_property name="ObjectShortName">data_bits[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/uart_loopback_tb/tx/enable_baud" type="logic">
+         <obj_property name="ElementShortName">enable_baud</obj_property>
+         <obj_property name="ObjectShortName">enable_baud</obj_property>
+      </wvobject>
+      <wvobject fp_name="/uart_loopback_tb/tx/parity_bit" type="logic">
+         <obj_property name="ElementShortName">parity_bit</obj_property>
+         <obj_property name="ObjectShortName">parity_bit</obj_property>
+      </wvobject>
+      <wvobject fp_name="/uart_loopback_tb/tx/parity_en" type="logic">
+         <obj_property name="ElementShortName">parity_en</obj_property>
+         <obj_property name="ObjectShortName">parity_en</obj_property>
+      </wvobject>
+      <wvobject fp_name="/uart_loopback_tb/tx/parity_even" type="logic">
+         <obj_property name="ElementShortName">parity_even</obj_property>
+         <obj_property name="ObjectShortName">parity_even</obj_property>
+      </wvobject>
+      <wvobject fp_name="/uart_loopback_tb/tx/rst" type="logic">
+         <obj_property name="ElementShortName">rst</obj_property>
+         <obj_property name="ObjectShortName">rst</obj_property>
+      </wvobject>
+      <wvobject fp_name="/uart_loopback_tb/tx/shift_reg" type="array">
+         <obj_property name="ElementShortName">shift_reg[7:0]</obj_property>
+         <obj_property name="ObjectShortName">shift_reg[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/uart_loopback_tb/tx/state" type="array">
+         <obj_property name="ElementShortName">state[2:0]</obj_property>
+         <obj_property name="ObjectShortName">state[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/uart_loopback_tb/tx/stop_bits" type="array">
+         <obj_property name="ElementShortName">stop_bits[1:0]</obj_property>
+         <obj_property name="ObjectShortName">stop_bits[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/uart_loopback_tb/tx/stop_phase" type="logic">
+         <obj_property name="ElementShortName">stop_phase</obj_property>
+         <obj_property name="ObjectShortName">stop_phase</obj_property>
+      </wvobject>
+      <wvobject fp_name="/uart_loopback_tb/tx/tick" type="logic">
+         <obj_property name="ElementShortName">tick</obj_property>
+         <obj_property name="ObjectShortName">tick</obj_property>
+      </wvobject>
+      <wvobject fp_name="/uart_loopback_tb/tx/tx_busy" type="logic">
+         <obj_property name="ElementShortName">tx_busy</obj_property>
+         <obj_property name="ObjectShortName">tx_busy</obj_property>
+      </wvobject>
+      <wvobject fp_name="/uart_loopback_tb/tx/tx_data" type="array">
+         <obj_property name="ElementShortName">tx_data[7:0]</obj_property>
+         <obj_property name="ObjectShortName">tx_data[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/uart_loopback_tb/tx/tx_pending" type="logic">
+         <obj_property name="ElementShortName">tx_pending</obj_property>
+         <obj_property name="ObjectShortName">tx_pending</obj_property>
+      </wvobject>
+      <wvobject fp_name="/uart_loopback_tb/tx/tx_start" type="logic">
+         <obj_property name="ElementShortName">tx_start</obj_property>
+         <obj_property name="ObjectShortName">tx_start</obj_property>
+      </wvobject>
+      <wvobject fp_name="/uart_loopback_tb/tx/txd" type="logic">
+         <obj_property name="ElementShortName">txd</obj_property>
+         <obj_property name="ObjectShortName">txd</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group850" type="group">
+      <obj_property name="label">uart_rx</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/uart_loopback_tb/rx/bit_count" type="array">
+         <obj_property name="ElementShortName">bit_count[3:0]</obj_property>
+         <obj_property name="ObjectShortName">bit_count[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/uart_loopback_tb/rx/clk" type="logic">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/uart_loopback_tb/rx/data_bits" type="array">
+         <obj_property name="ElementShortName">data_bits[3:0]</obj_property>
+         <obj_property name="ObjectShortName">data_bits[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/uart_loopback_tb/rx/data_out" type="array">
+         <obj_property name="ElementShortName">data_out[7:0]</obj_property>
+         <obj_property name="ObjectShortName">data_out[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/uart_loopback_tb/rx/data_ready" type="logic">
+         <obj_property name="ElementShortName">data_ready</obj_property>
+         <obj_property name="ObjectShortName">data_ready</obj_property>
+      </wvobject>
+      <wvobject fp_name="/uart_loopback_tb/rx/enable" type="logic">
+         <obj_property name="ElementShortName">enable</obj_property>
+         <obj_property name="ObjectShortName">enable</obj_property>
+      </wvobject>
+      <wvobject fp_name="/uart_loopback_tb/rx/enable_sample" type="logic">
+         <obj_property name="ElementShortName">enable_sample</obj_property>
+         <obj_property name="ObjectShortName">enable_sample</obj_property>
+      </wvobject>
+      <wvobject fp_name="/uart_loopback_tb/rx/framing_err" type="logic">
+         <obj_property name="ElementShortName">framing_err</obj_property>
+         <obj_property name="ObjectShortName">framing_err</obj_property>
+      </wvobject>
+      <wvobject fp_name="/uart_loopback_tb/rx/next_state" type="array">
+         <obj_property name="ElementShortName">next_state[2:0]</obj_property>
+         <obj_property name="ObjectShortName">next_state[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/uart_loopback_tb/rx/parity_bit" type="logic">
+         <obj_property name="ElementShortName">parity_bit</obj_property>
+         <obj_property name="ObjectShortName">parity_bit</obj_property>
+      </wvobject>
+      <wvobject fp_name="/uart_loopback_tb/rx/parity_en" type="logic">
+         <obj_property name="ElementShortName">parity_en</obj_property>
+         <obj_property name="ObjectShortName">parity_en</obj_property>
+      </wvobject>
+      <wvobject fp_name="/uart_loopback_tb/rx/parity_err" type="logic">
+         <obj_property name="ElementShortName">parity_err</obj_property>
+         <obj_property name="ObjectShortName">parity_err</obj_property>
+      </wvobject>
+      <wvobject fp_name="/uart_loopback_tb/rx/parity_even" type="logic">
+         <obj_property name="ElementShortName">parity_even</obj_property>
+         <obj_property name="ObjectShortName">parity_even</obj_property>
+      </wvobject>
+      <wvobject fp_name="/uart_loopback_tb/rx/rst" type="logic">
+         <obj_property name="ElementShortName">rst</obj_property>
+         <obj_property name="ObjectShortName">rst</obj_property>
+      </wvobject>
+      <wvobject fp_name="/uart_loopback_tb/rx/rxd" type="logic">
+         <obj_property name="ElementShortName">rxd</obj_property>
+         <obj_property name="ObjectShortName">rxd</obj_property>
+      </wvobject>
+      <wvobject fp_name="/uart_loopback_tb/rx/sample_count" type="array">
+         <obj_property name="ElementShortName">sample_count[3:0]</obj_property>
+         <obj_property name="ObjectShortName">sample_count[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/uart_loopback_tb/rx/sample_tick" type="logic">
+         <obj_property name="ElementShortName">sample_tick</obj_property>
+         <obj_property name="ObjectShortName">sample_tick</obj_property>
+      </wvobject>
+      <wvobject fp_name="/uart_loopback_tb/rx/sampled_parity" type="logic">
+         <obj_property name="ElementShortName">sampled_parity</obj_property>
+         <obj_property name="ObjectShortName">sampled_parity</obj_property>
+      </wvobject>
+      <wvobject fp_name="/uart_loopback_tb/rx/shift_reg" type="array">
+         <obj_property name="ElementShortName">shift_reg[7:0]</obj_property>
+         <obj_property name="ObjectShortName">shift_reg[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/uart_loopback_tb/rx/state" type="array">
+         <obj_property name="ElementShortName">state[2:0]</obj_property>
+         <obj_property name="ObjectShortName">state[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/uart_loopback_tb/rx/stop_bits" type="logic">
+         <obj_property name="ElementShortName">stop_bits</obj_property>
+         <obj_property name="ObjectShortName">stop_bits</obj_property>
+      </wvobject>
+      <wvobject fp_name="/uart_loopback_tb/rx/stop_phase" type="logic">
+         <obj_property name="ElementShortName">stop_phase</obj_property>
+         <obj_property name="ObjectShortName">stop_phase</obj_property>
+      </wvobject>
+      <wvobject fp_name="/uart_loopback_tb/rx/stop_sampled" type="logic">
+         <obj_property name="ElementShortName">stop_sampled</obj_property>
+         <obj_property name="ObjectShortName">stop_sampled</obj_property>
+      </wvobject>
+   </wvobject>
+</wave_config>

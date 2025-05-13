@@ -49,7 +49,8 @@ SOURCES ?= \
 	$(SOURCE_DIR)/uart_tx.sv \
 	$(SOURCE_DIR)/uart_rx.sv \
 	$(SOURCE_DIR)/fifo_lite.sv \
-	$(SOURCE_DIR)/uart_top.sv
+	$(SOURCE_DIR)/uart_top.sv \
+	$(SOURCE_DIR)/uart_16550_regs_pkg.sv
 
 # --------------------------------------------------------------
 # Simulation Only:
@@ -61,7 +62,8 @@ TEST_SOURCES ?= \
 	$(TEST_DIR)/uart_rx_tb.sv \
 	$(TEST_DIR)/uart_loopback_tb.sv \
 	$(TEST_DIR)/fifo_lite_tb.sv \
-	$(TEST_DIR)/uart_top_tb.sv
+	$(TEST_DIR)/uart_top_tb.sv \
+	$(TEST_DIR)/uart_16550_regs_tb.sv
 
 # --------------------------------------------------------------
 # Block Designs:

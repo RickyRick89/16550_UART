@@ -50,7 +50,9 @@ SOURCES ?= \
 	$(SOURCE_DIR)/uart_rx.sv \
 	$(SOURCE_DIR)/fifo_lite.sv \
 	$(SOURCE_DIR)/uart_top.sv \
-	$(SOURCE_DIR)/uart_16550_regs_pkg.sv
+	$(SOURCE_DIR)/uart_16550_regs_pkg.sv \
+	$(SOURCE_DIR)/axi4_lite_pkg.sv \
+	$(SOURCE_DIR)/axi_ui.sv
 
 # --------------------------------------------------------------
 # Simulation Only:
@@ -63,7 +65,8 @@ TEST_SOURCES ?= \
 	$(TEST_DIR)/uart_loopback_tb.sv \
 	$(TEST_DIR)/fifo_lite_tb.sv \
 	$(TEST_DIR)/uart_top_tb.sv \
-	$(TEST_DIR)/uart_16550_regs_tb.sv
+	$(TEST_DIR)/uart_16550_regs_tb.sv \
+	$(TEST_DIR)/axi_ui_tb.sv
 
 # --------------------------------------------------------------
 # Block Designs:
@@ -81,7 +84,8 @@ WAVES ?= \
 	$(SCRIPTS_DIR)/uart_rx_tb_waves.wcfg \
 	$(SCRIPTS_DIR)/uart_loopback_tb_waves.wcfg \
 	$(SCRIPTS_DIR)/fifo_lite_tb_waves.wcfg \
-	$(SCRIPTS_DIR)/uart_top_tb_waves.wcfg
+	$(SCRIPTS_DIR)/uart_top_tb_waves.wcfg \
+	$(SCRIPTS_DIR)/axi_ui_tb_waves.wcfg
 
 # ##############################################################
 # Board Selection:

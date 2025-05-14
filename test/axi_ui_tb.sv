@@ -128,7 +128,7 @@ module axi_ui_tb;
         axi_write(3'd3, 8'h03); // LCR: 8-bit, 1 stop bit, no parity
 
         // Simulate RX ready
-        rx_ready = 1;
+        dut.rhr_has_data = 1;
         repeat (1) @(posedge clk);
 
         // Check IRQ
@@ -158,6 +158,7 @@ module axi_ui_tb;
 
         axi_read(3'd3, temp);  // DLL (via DLAB)
         axi_write(3'd3, 8'h83); // LCR.DLAB = 1
+		repeat (1) @(posedge clk);
         axi_read(3'd0, temp);
         if (temp !== 8'h01) begin
 			$display("DLL default incorrect");
@@ -218,7 +219,7 @@ module axi_ui_tb;
 		end
 
         parity_err = 0;
-        rx_ready   = 1;
+        dut.rhr_has_data = 1;
         @(posedge clk);
         axi_read(3'd2, temp); // ISR
         if (temp[4:0] !== 4'b01000)begin
@@ -226,6 +227,7 @@ module axi_ui_tb;
 			$finish;
 		end
 
+        axi_read(3'd0, temp);
         rx_ready = 0;
         tx_ready = 1;
         @(posedge clk);

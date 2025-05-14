@@ -30,6 +30,4 @@ This project implements a 16550-compatible UART core with AXI4-Lite interface su
 ├── source/ # Verilog RTL files
 ├── test/ # Testbenches
 ├── scripts/ # Waveforms, Contraints and TCL files
-├── driver/ # C BSP driver files
-├── docs/ # Datasheets, specs, block diagrams
 ├── README.md # This file

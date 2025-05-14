@@ -41,4 +41,89 @@ module uart_16550 #(
     input  logic rxd,
     output logic txd
 );
+	// Imports ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    import uart_16550_regs_pkg::*;
+
+    // Variables ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    uart_16550_regs_t regs;
+    logic wr_en, rd_en;
+    logic [7:0] rd_data;
+    logic tx_ready, rx_ready, rx_valid;
+    logic parity_err, framing_err, overrun_err;
+	logic new_baud;
+	logic [3:0] data_bits;
+	
+    // Assignments ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	assign data_bits = 4'd5 + regs.lcr.word_length;
+
+    // Instantiations ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    // UART Top
+    uart_top #(
+        .DL_WIDTH(DL_WIDTH),
+        .PSD_WIDTH(PSD_WIDTH),
+        .FIFO_DEPTH(FIFO_DEPTH)
+    ) uart_core (
+        .clk(clk),
+        .rst(rst),
+        .rxd(rxd),
+        .txd(txd),
+        .wr_en(wr_en),
+        .wr_data(regs.thr),
+        .tx_ready(tx_ready),
+        .rd_en(rd_en),
+        .rd_data(rd_data),
+        .rx_ready(rx_ready),
+		.rx_valid(rx_valid),
+        .parity_err(parity_err),
+        .framing_err(framing_err),
+        .overrun_err(overrun_err),
+        .stop_bits(regs.lcr.stop_bits),
+        .parity_en(regs.lcr.parity_en),
+        .parity_even(regs.lcr.even_parity),
+        .data_bits(data_bits),
+        .divisor_latch({regs.dlm, regs.dll}),
+        .psd(regs.psd[3:0]),
+        .new_baud(new_baud)
+    );
+
+    // AXI UI
+    axi_ui #(
+        .DL_WIDTH(DL_WIDTH),
+        .PSD_WIDTH(PSD_WIDTH),
+        .FIFO_DEPTH(FIFO_DEPTH)
+    ) ui (
+        .clk(clk),
+        .rst(rst),
+        .awaddr(awaddr),
+        .awvalid(awvalid),
+        .awready(awready),
+        .wdata(wdata),
+        .wvalid(wvalid),
+        .wstrb(wstrb),
+        .wready(wready),
+        .bvalid(bvalid),
+        .bresp(bresp),
+        .bready(bready),
+        .araddr(araddr),
+        .arvalid(arvalid),
+        .arready(arready),
+        .rdata(rdata),
+        .rvalid(rvalid),
+        .rresp(rresp),
+        .rready(rready),
+        .regs_out(regs),
+        .wr_en(wr_en),
+        .rd_en(rd_en),
+        .rd_data(rd_data),
+        .tx_ready(tx_ready),
+        .rx_ready(rx_ready),
+		.rx_valid(rx_valid),
+        .parity_err(parity_err),
+        .framing_err(framing_err),
+        .overrun_err(overrun_err),
+		.new_baud(new_baud),
+        .irq(irq),
+        .irq_n(irq_n)
+    );
+
 endmodule

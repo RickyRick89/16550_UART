@@ -19,6 +19,7 @@ module uart_top #(
     input  logic        rd_en,
     output logic [7:0]  rd_data,
     output logic        rx_ready,
+    output logic        rx_valid,
 
     // Error flags (pulsed)
     output logic        parity_err,
@@ -54,7 +55,6 @@ module uart_top #(
     logic       rx_data_ready;
     logic       rx_parity_err, rx_framing_err;
     logic       rx_fifo_full, rx_fifo_empty;
-    logic       rx_rd_valid;
     logic 		rx_fifo_wr_en; 
     logic [7:0] rx_fifo_rd_data;
 
@@ -87,7 +87,7 @@ module uart_top #(
         .wr_data(rx_data_out),
         .rd_en(rd_en),
         .rd_data(rx_fifo_rd_data),
-        .rd_valid(rx_rd_valid),
+        .rd_valid(rx_valid),
         .full(rx_fifo_full),
         .empty(rx_fifo_empty)
     );
